@@ -1,9 +1,11 @@
 const noOfNotifications = document.querySelectorAll('.notification_box p').length
 const notificationNumber = document.querySelectorAll('.number')
 
+//for to get number of notifications
 notificationNumber.forEach((e) => e.innerText = noOfNotifications)
 
-
+//for title update
+document.title = `Notifications ( ${noOfNotifications} )`
 
 //for dragging
 const notification = document.querySelector('.notification')
