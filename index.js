@@ -12,8 +12,8 @@ const notification = document.querySelector('.notification')
 const notification_checkbox = document.querySelector('#notification_checkbox')
 
 const dragFunction = (e) => {
-    const pageX = e.clientX 
-    const pageY = e.clientY 
+    const pageX = e.pageX 
+    const pageY = e.pageY 
 
     notification.style.left = pageX + 'px'
     notification.style.top = pageY + 'px'
