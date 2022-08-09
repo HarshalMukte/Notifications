@@ -31,17 +31,17 @@ const dragFunction = (e) => {
 
 let setTime;
 
-notification_checkbox.addEventListener('mousedown', (e) => {
+notification_checkbox.addEventListener('pointerdown', (e) => {
 
     setTime = setTimeout(() => {
-        document.addEventListener('mousemove', dragFunction)    
+        document.addEventListener('pointermove', dragFunction)    
     }, 200);
 })
 
-document.addEventListener('mouseup', () => {
+document.addEventListener('pointerup', () => {
     //for grabbing cursor 
     notification.style.cursor = 'pointer'
-    document.removeEventListener('mousemove', dragFunction)
+    document.removeEventListener('pointermove', dragFunction)
     
     //for default checked of checkbox
     notification_checkbox.style.pointerEvents = 'all'
